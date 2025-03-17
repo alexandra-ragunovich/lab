@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="stylescalendar.css">
+    <title>Интерактивный Календарь</title>
+</head>
+
+<body>
+
+    <header>
+        <input type="checkbox" id="menu-toggle" class="toggle_check">
+        <label class="toggle" for="menu-toggle">☰</label>
+        <a href="index.html" class="name">Некрасов</a>
+        <div class="navigation">
+            <ul class="nav">
+                <li><a href="services.html">Виды услуг</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="work.html">Как я работаю</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+            <div class="calling">
+                <div class="callrightnow">
+                    <p class="tx">Звоните прямо сейчас!</p>
+                    <p class="phonenumber">+375 33 123-45-67</p>
+                </div>
+                <a href="#order_call" class="button">Заказать звонок</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="show">
+        <!-- <input type="number" min="1" max="2999" id="yearInput" placeholder="Введите год" value="" /> -->
+        <!-- <select id="yearInput"  >
+            <script>
+                for (let year = 1; year <= 2999; year++) {
+                    document.write(`<option value="${year}">${year}</option>`);
+                }
+            </script>
+        </select> -->
+            <div class="drop"> <input type="text" id="yearInput" placeholder="Выберите год" readonly onclick="toggleDropdown()" />
+                <div id="yearDropdown" class="dropdown" style="display: none;">
+                    <ul>
+                        <script>
+                                for (let year = 1000; year <= 2999; year++) {
+                                    document.write(`<li onclick="setYear(${year})">${year}</li>`);
+                                }
+                        </script>
+                    </ul>
+                </div>
+            </div>
+            <button onclick="generateCalendar()">Показать календарь</button>
+        </div>
+        <div class="event-input">
+            <input type="date" id="dateInput" />
+            <input type="text" id="eventInput" placeholder="Введите событие" />
+            <button onclick="addEvent()">Добавить событие</button>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+               
+                <p id="modal-event-text"></p>
+            </div>
+        </div>
+        <div class="calendar" id="calendar"></div>
+    </section>
+
+    <footer id="foot">
+        <div class="icons_media">
+            <div class="circle"><img class="icons" src="assets/svg/Facebook.svg" alt="Facebook"></div>
+            <div class="circle"><img class="icons" src="assets/svg/Instagram.svg" alt="Instagram"></div>
+            <div class="circle"><img class="icons" src="assets/svg/Twitter.svg" alt="Twitter"></div>
+            <div class="circle"><img class="icons" src="assets/svg/VK.svg" alt="VK"></div>
+        </div>
+        <div class="navig_foot">
+            <a href="services.html">Виды услуг</a>
+            <a href="#">Обо мне</a>
+            <a href="work.html">Как я работаю</a>
+            <a href="reviews.html">Отзывы</a>
+            <a href="contact.html">Контакты</a>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Некрасов</p>
+        </div>
+    </footer>
+
+    <script src="scripts/calendar.js"></script>
+</body>
+
+</html>

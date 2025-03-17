@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="scripts/map.js" type="text/javascript"></script>
+    <title>Контакты</title>
+</head>
+
+<body onload="loadMap()"> 
+
+
+    <header>
+        <input type="checkbox" id="menu-toggle" class="toggle_check">
+        <label class="toggle" for="menu-toggle">☰</label>
+        <a href="index.html" class="name">Некрасов</a>
+
+        <div class="navigation">
+
+            <ul class="nav">
+                <li><a href="services.html">Виды услуг</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="work.html">Как я работаю</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="calling">
+                <div class="callrightnow">
+                    <p class="tx">Звоните прямо сейчас!</p>
+                    <p class="phonenumber">+375 33 123-45-67</p>
+                </div>
+
+
+                <a href="contact.html#order_call" class="button">Заказать звонок</a>
+
+            </div>
+    </header>
+
+    <section id="contact" class="contacts">
+        <div id="map" class="map"></div>
+
+
+
+        <div class="info_contacts">
+            <div class="about_contacts">
+                <p>Контакты</p>
+                <div class="cont">
+                    <p>+375 33 123-45-67</p>
+                    <p>lawyerNekrasow@gmail.com</p>
+                    <br>
+                    <p>г.Минск, метро "Академия наук", ул. Якуба Коласа, дом 28</p>
+                </div>
+            </div>
+
+            <button class="WhatsApp_but">Написать в WhatsApp</button>
+        </div>
+        <button class="WhatsApp_but2">Написать в WhatsApp</button>
+    </section>
+
+
+    <section id="order_call" class="bind_with_me">
+        <!-- <img class="photo_comp" src="assets/images/computer.png" alt="" computer /> -->
+        <div class="description">
+            <h2>Свяжитесь со мной</h2>
+            <p class="effort">Окажу вам экспертную консультацию, вникну в суть вашей проблемы и подготовлю
+                оптимальный плане решения поставленной задачи</p>
+        </div>
+
+        <form class="form" method="post">
+            <div class="input">
+                <input placeholder="Ваше имя" maxlength="40" required></input>
+                <input type="tel" class="number" title="Введите в формате: +375 (00) 000-00-00"
+                    placeholder="+375 (00) 000-00-00"
+                    pattern="(\+375 \(\d{2}\) \d{3}-\d{2}-\d{2}|8 \(\d{2}\) \d{3}-\d{2}-\d{2})" required></input>
+                <input class="email" placeholder="E-mail" pattern=".+@gmail\.com|.+@mail\.ru"
+                    title="Введите в формате: xxx@gmail.com, xxx@mail.ru" required></input>
+            </div>
+
+            <button type="submit" class="button_form">Оставить заявку</button>
+        </form>
+    </section>
+
+
+
+
+
+    <footer id="foot">
+
+        <div class="icons_media">
+
+            <div class="circle"> <img class="icons" src="assets/svg/Facebook.svg" alt="Facebook"> </div>
+            <div class="circle"><img class="icons" src="assets/svg/Instagram.svg" alt="Instagram"></div>
+            <div class="circle"><img class="icons" src="assets/svg/Twitter.svg" alt="Twitter"> </div>
+            <div class="circle"><img class="icons" src="assets/svg/VK.svg" alt="VK"> </div>
+
+        </div>
+
+        <div class="navig_foot">
+            <a href="services.html">Виды услуг</a>
+            <a href="about.html">Обо мне</a>
+            <a href="work.html">Как я работаю</a>
+            <a href="reviews.html">Отзывы</a>
+            <a href="#">Контакты</a>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Некрасов</p>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>

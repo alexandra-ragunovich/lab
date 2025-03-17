@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="scripts/map.js" type="text/javascript"></script>
+   
+    <title>Сайт юриста</title>
+</head>
+
+<body onload="loadMap()">
+
+
+    <header>
+        <input type="checkbox" id="menu-toggle" class="toggle_check">
+        <label class="toggle" for="menu-toggle">☰</label>
+        <a href="#" class="name">Некрасов</a>
+
+        <div class="navigation">
+
+            <ul class="nav">
+                <li><a href="services.html">Виды услуг</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="work.html">Как я работаю</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+            <div class="calling">
+                <div class="callrightnow">
+                    <p class="tx">Звоните прямо сейчас!</p>
+                    <p class="phonenumber">+375 33 123-45-67</p>
+                </div>
+
+
+                <a href="#order_call" class="button">Заказать звонок</a>
+
+            </div>
+    </header>
+
+    <section id="head" class="mihelcon">
+        <div class="order">
+            <div class="order_text">
+                <p class="mihelcon_sergey">Некрасов Андрей</p>
+                <p class="mihelcon_text">Ваш юрист по уголовному и гражданскому праву. Более 12 лет юридической
+                    практики.
+                </p>
+            </div>
+
+            <div class="button_order">
+                <a href="services.html#cost" class="cost_of_price">Стоимость услуг</a>
+                <a href="services.html#about" class="details_service">Узнать подробности</a>
+           <a href="calendar.html" class="cost_of_price">Календарь</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="work" class="how">
+        <section id="my_work" class="work">
+            <div class="tips">
+                <div class="how_work">
+                    <h2>Как я работаю?</h2>
+                    <p>Внимательно ознакомьтесь с этапами работ и выберите для себя самое полезное и интересное</p>
+                </div>
+
+
+                <div class="steps">
+
+                    <div class="step">
+
+                        <div class="number_tip">1</div>
+                        <div class="text">
+                            <h3>Вникаю в суть дела</h3>
+                            <p>Провожу с клиентом подробное собеседование, на котором выясняем все детали и
+                                обстоятельства.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+
+                        <div class="number_tip">2</div>
+                        <div class="text">
+                            <h3>Предлагаю стратегию</h3>
+                            <p>На основании полученной от клиента информации, готовлю различные варианты действий и
+                                согласовываю их с клиентом.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="number_tip">3</div>
+                        <div class="text">
+                            <h3>Начинаю работу</h3>
+                            <p>После согласования с клиентом стратегии - начинаю активную работу над демо, доводя до
+                                результата.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+
+    <section class="consultation">
+
+        <div class="text_consult">
+            <h2>Бесплатная консультация</h2>
+            <p>Успейте воспользоваться специальным предложением. Получите первую юридическую консультацию совершенно
+                бесплатно!</p>
+        </div>
+        <div class="date_form">
+            <div class="date">
+                <div class="num_clock">
+                    <h1>21</h1>
+                    <p>день</p>
+                </div>
+                <div class="num_clock">
+                    <h1>15</h1>
+                    <p>часов</p>
+                </div>
+                <div class="num_clock">
+                    <h1>38</h1>
+                    <p>минут</p>
+                </div>
+                <div class="num_clock">
+                    <h1>40</h1>
+                    <p>секунд</p>
+                </div>
+            </div>
+            <div class="form1">
+
+                <input class="form1_in" type="email" placeholder="Введите почту"></input>
+                <button class="button_form">Оставить заявку</button>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="contacts">
+
+        <div id="map" class="map"></div>
+
+
+        <div class="info_contacts">
+            <div class="about_contacts">
+                <p>Контакты</p>
+                <div class="cont">
+                    <p>+375 33 123-45-67</p>
+                    <p>lawyerNekrasow@gmail.com</p>
+                    <br>
+                    <p>г.Минск, метро "Академия наук", ул. Якуба Коласа, дом 28</p>
+                </div>
+            </div>
+
+            <button class="WhatsApp_but">Написать в WhatsApp</button>
+        </div>
+        <button class="WhatsApp_but2">Написать в WhatsApp</button>
+    </section>
+
+
+    <footer id="foot">
+
+        <div class="icons_media">
+
+            <div class="circle"> <img class="icons" src="assets/svg/Facebook.svg" alt="Facebook"> </div>
+            <div class="circle"><img class="icons" src="assets/svg/Instagram.svg" alt="Instagram"></div>
+            <div class="circle"><img class="icons" src="assets/svg/Twitter.svg" alt="Twitter"> </div>
+            <div class="circle"><img class="icons" src="assets/svg/VK.svg" alt="VK"> </div>
+
+        </div>
+
+        <div class="navig_foot">
+            <a href="services.html">Виды услуг</a>
+            <a href="about.html">Обо мне</a>
+            <a href="work.html">Как я работаю</a>
+            <a href="reviews.html">Отзывы</a>
+            <a href="contact.html">Контакты</a>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Некрасов</p>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
